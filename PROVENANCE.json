@@ -9,5 +9,9 @@
   "copied_evidence": "evidence/ISSUE12_PROGRAM_PERFORMANCE_CLOSURE_20260815.md",
   "copied_evidence_sha256": "f3cb810c7af369a8d6a3fe854611e29bfed9155a88279eb557eb10f9add535c7",
   "qualification_inherited": false,
-  "implementation_extracted": false
+  "implementation_extracted": false,
+  "licensing": {
+    "scaffolding": "Apache-2.0",
+    "copied_evidence": "No additional license grant is inferred from this split."
+  }
 }
