@@ -1,0 +1,13 @@
+{
+  "schema_version": "stateaxis-mod-provenance/v1",
+  "source_repository": "Qixin-Gaoke/stateaxis",
+  "source_commit": "7562b5fa6f42e2e045a877b53ac934739e2cf230",
+  "source_issues": [
+    12
+  ],
+  "source_evidence": "docs/history/reports/ISSUE12_PROGRAM_PERFORMANCE_CLOSURE_20260815.md",
+  "copied_evidence": "evidence/ISSUE12_PROGRAM_PERFORMANCE_CLOSURE_20260815.md",
+  "copied_evidence_sha256": "f3cb810c7af369a8d6a3fe854611e29bfed9155a88279eb557eb10f9add535c7",
+  "qualification_inherited": false,
+  "implementation_extracted": false
+}

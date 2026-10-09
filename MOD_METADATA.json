@@ -1,0 +1,44 @@
+{
+  "schema_version": "vllm-hust-mod-metadata-v1",
+  "mod_id": "org.vllm-hust.stateaxis-program-aware-scheduling",
+  "repository": "stateaxis-program-aware-scheduling",
+  "display_name": "stateaxis-program-aware-scheduling",
+  "canonical_repository": "https://github.com/intellistream/stateaxis-program-aware-scheduling",
+  "responsibility": {
+    "organization": "intellistream",
+    "maintainers": [
+      {
+        "name": "Shuhao Zhang (Tony)",
+        "github": "ShuhaoZhangTony"
+      }
+    ],
+    "advisor_status": "not_declared",
+    "advisors": []
+  },
+  "lifecycle": {
+    "status": "experimental",
+    "default_enabled": false,
+    "activation_contract": "Import-only research descriptor; activation is refused until the StateAxis host contract and independent implementation are reviewed.",
+    "rollback_contract": "Disable or forget the descriptor and run the unchanged StateAxis host without this MOD."
+  },
+  "scope": {
+    "mechanism": "program_aware_attained_service_scheduling",
+    "supported_workloads": [],
+    "out_of_scope": [
+      "general performance claims",
+      "automatic inheritance from StateAxis aggregate evidence"
+    ]
+  },
+  "evidence": {
+    "qualification": "not-beneficial-in-tested-cell",
+    "latest_result": "evidence/ISSUE12_PROGRAM_PERFORMANCE_CLOSURE_20260815.md",
+    "index": "EVIDENCE.md",
+    "performance_claims": [
+      {
+        "label": "not-beneficial-in-tested-cell",
+        "scope": "frozen StateAxis source evidence only",
+        "result": "The frozen high-fan-out matched workload was negative."
+      }
+    ]
+  }
+}
