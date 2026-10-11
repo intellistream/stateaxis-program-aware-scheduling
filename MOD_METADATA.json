@@ -18,26 +18,28 @@
   "lifecycle": {
     "status": "experimental",
     "default_enabled": false,
-    "activation_contract": "Import-only research descriptor; activation is refused until the StateAxis host contract and independent implementation are reviewed.",
-    "rollback_contract": "Disable or forget the descriptor and run the unchanged StateAxis host without this MOD."
+    "activation_contract": "Manifest 0.3 active, default-off, ECPA-only activation of hash-bound bounded attained-service program scheduling; requires the session-lifecycle MOD.",
+    "rollback_contract": "Omit this MOD from the Extension Manager plan; StateAxis retains ordinary scheduling while the independent session-lifecycle dependency may remain enabled."
   },
   "scope": {
     "mechanism": "program_aware_attained_service_scheduling",
-    "supported_workloads": [],
+    "supported_workloads": [
+      "generation-bound agent programs with concurrent fan-out and explicit session close"
+    ],
     "out_of_scope": [
       "general performance claims",
       "automatic inheritance from StateAxis aggregate evidence"
     ]
   },
   "evidence": {
-    "qualification": "not-beneficial-in-tested-cell",
+    "qualification": "historical-negative-active-experimental",
     "latest_result": "evidence/ISSUE12_PROGRAM_PERFORMANCE_CLOSURE_20260815.md",
     "index": "EVIDENCE.md",
     "performance_claims": [
       {
         "label": "not-beneficial-in-tested-cell",
-        "scope": "frozen StateAxis source evidence only",
-        "result": "The frozen high-fan-out matched workload was negative."
+        "scope": "Qwen2.5-14B BF16 frozen high-fan-out StateAxis source evidence only",
+        "result": "Program throughput improved 0.355% but ordinary-request TPOT P99 regressed 8.082%; the preregistered cell was negative."
       }
     ]
   }

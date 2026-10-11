@@ -1,8 +1,8 @@
 {
   "schema_version": "0.3-experimental",
   "extension_id": "org.vllm-hust.stateaxis-program-aware-scheduling",
-  "extension_version": "0.1.0.dev0",
-  "kind": "in_process_plugin",
+  "extension_version": "0.2.0",
+  "kind": "runtime_bridge",
   "host": {
     "provider": "stateaxis",
     "name": "stateaxis",
@@ -23,15 +23,30 @@
   ],
   "implementation": [
     {
-      "type": "python_module",
-      "module": "stateaxis_program_aware_scheduling",
-      "object": "StateaxisProgramAwareSchedulingContractProposal",
-      "status": "import_only"
+      "type": "host_builtin",
+      "symbol": "statecentric_engine:parse_program_aware_scheduling_additional_config",
+      "status": "active"
     }
   ],
   "requires_services": [],
-  "requires_extensions": [],
-  "resource_claims": [],
+  "requires_extensions": [
+    {
+      "extension_id": "org.vllm-hust.stateaxis-session-lifecycle",
+      "version_range": ">=0.2,<0.3"
+    }
+  ],
+  "resource_claims": [
+    {
+      "resource": "stateaxis.native.program-scheduling-authority",
+      "scope": "stateaxis-process",
+      "mode": "exclusive"
+    },
+    {
+      "resource": "stateaxis.native.scheduler-order-authority",
+      "scope": "stateaxis-process",
+      "mode": "exclusive"
+    }
+  ],
   "components": [
     {
       "component_id": "stateaxis-program-aware-scheduling",
@@ -40,17 +55,42 @@
       ],
       "execution_planes": [
         "scheduler",
-        "worker",
-        "device"
+        "worker"
       ],
       "isolation": "trusted_in_process",
-      "implementation_ref": "stateaxis_program_aware_scheduling:StateaxisProgramAwareSchedulingContractProposal",
+      "implementation_ref": "stateaxis_program_aware_scheduling:program_aware_scheduling",
       "permissions": []
     }
   ],
   "activation": {
-    "entry_points": [],
+    "entry_points": [
+      {
+        "group": "stateaxis.mod_handlers",
+        "name": "program_aware_scheduling"
+      }
+    ],
     "environment": {},
-    "additional_config": {}
+    "additional_config": {
+      "stateaxis_program_aware_scheduling": {
+        "enabled": true,
+        "authority": true,
+        "max_programs": 64,
+        "max_threads": 256,
+        "max_dependencies_per_thread": 32,
+        "attained_service_order": true,
+        "ordinary_request_compatibility": true,
+        "generation_bound": true,
+        "request_bound_safe_points": true,
+        "cleanup_on_session_close": true,
+        "selector_budget_us": 100,
+        "fail_closed": true
+      },
+      "stateaxis_mod": {
+        "mod_id": "org.vllm-hust.stateaxis-program-aware-scheduling",
+        "version": "0.2.0",
+        "manifest_sha256": "4d57ded83290cedfb1370b26b9bc9d0fe5be0098bdc17a4d287f526c673a82de",
+        "performance_qualified": false
+      }
+    }
   }
 }
