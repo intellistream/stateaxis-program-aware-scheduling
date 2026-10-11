@@ -2,35 +2,50 @@
 
 Extension ID: `org.vllm-hust.stateaxis-program-aware-scheduling`
 
-Program and workflow-aware attained-service scheduling for agent request graphs.
-
-This repository is the independent MOD boundary for StateAxis issues [#12](https://github.com/Qixin-Gaoke/stateaxis/issues/12).
-It is deliberately `import_only`, default-off, and cannot be enabled. The split does
-not inherit correctness, device, performance, or publication qualification from the
-aggregate StateAxis repository.
+This repository owns the independent MOD boundary for StateAxis issue
+[#12](https://github.com/Qixin-Gaoke/stateaxis/issues/12): bounded,
+generation-aware attained-service scheduling across agent program threads.
+Version `0.2.0` is an active Manifest 0.3 contract for the existing StateAxis
+host mechanism. It remains default-off and is activated only through Extension
+Manager/ECPA with the exact research-manifest digest.
 
 ## Evidence boundary
 
-Status: **negative**.
+Status: **historical matched negative, active experimental, not
+performance-qualified**.
 
-The frozen high-fan-out matched workload was negative.
+In the frozen Qwen2.5-14B BF16 high-fan-out cell, program throughput improved
+`0.355%`, program-completion P50 improved `11.973%`, and attained-service
+fairness improved `12.0%`. Those component changes did not pass the registered
+gate: program-tail gains were below `15%`, and ordinary-request TPOT P99
+regressed `8.082%` against a `5%` guard. This result applies only to that cell;
+it is neither a general speedup nor evidence that other program shapes cannot
+benefit.
 
-The copied evidence and its SHA-256 are recorded in `PROVENANCE.json`. Negative,
-failed, and inconclusive results are retained. Microbenchmarks and component results
-must not be restated as online end-to-end gains.
+Negative, failed, and inconclusive attempts are retained. The copied evidence
+and SHA-256 are recorded in `PROVENANCE.json`; see `EVIDENCE.md` for the index.
 
-## Install and inspect
+## Activation contract
+
+The admitted ON contract fixes the program/thread/dependency bounds,
+attained-service order, ordinary-request compatibility, generation binding,
+request-bound safe points, selector budget, close-time cleanup, and fail-closed
+behavior. It requires
+`org.vllm-hust.stateaxis-session-lifecycle >=0.2,<0.3`; both MODs must be enabled
+in the same Manager plan. Direct `STATE_ENGINE_ISSUE12_*` activation is rejected
+by the StateAxis host.
 
 ```bash
 python -m pip install .
 vllm-hust-ext extension inspect org.vllm-hust.stateaxis-program-aware-scheduling
 vllm-hust-ext extension check org.vllm-hust.stateaxis-program-aware-scheduling
+vllm-hust-ext extension plan org.vllm-hust.stateaxis-program-aware-scheduling
+vllm-hust-ext run --dry-run -- /path/to/native_state_engine ...
 ```
 
-Discovery does not enable the MOD. A future active revision must extract an
-independently reviewable implementation, declare exclusive resources where needed,
-and pass exactness, lifecycle, release, failure-recovery, and matched real-online
-gates.
+Rollback is omission: remove this MOD from the Manager plan. StateAxis then uses
+ordinary scheduling; the session-lifecycle dependency can be independently kept
+or removed subject to other dependents.
 
 ## Validate
 

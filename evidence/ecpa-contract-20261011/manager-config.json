@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "extensions": {
+    "org.vllm-hust.stateaxis-session-lifecycle": {
+      "enabled": true,
+      "configuration": {
+        "experiment_mode": true,
+        "research_manifest_path": "../stateaxis-session-lifecycle/RESEARCH_MANIFEST.json",
+        "host_version": "1.0",
+        "host_api_version": "1.0",
+        "protocol_versions": {
+          "stateaxis.mod-proposal.session-lifecycle": "1.0"
+        }
+      }
+    },
+    "org.vllm-hust.stateaxis-program-aware-scheduling": {
+      "enabled": true,
+      "configuration": {
+        "experiment_mode": true,
+        "research_manifest_path": "RESEARCH_MANIFEST.json",
+        "host_version": "1.0",
+        "host_api_version": "1.0",
+        "protocol_versions": {
+          "stateaxis.mod-proposal.program-aware-scheduling": "1.0"
+        }
+      }
+    }
+  }
+}

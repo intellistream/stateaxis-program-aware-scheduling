@@ -1,0 +1,59 @@
+{
+  "schema_version": "stateaxis-research-mod/v1",
+  "mod_id": "org.vllm-hust.stateaxis-program-aware-scheduling",
+  "version": "0.2.0",
+  "mechanism": {
+    "name": "bounded-program-aware-attained-service-scheduling",
+    "enabled": true,
+    "authority": true,
+    "max_programs": 64,
+    "max_threads": 256,
+    "max_dependencies_per_thread": 32,
+    "attained_service_order": true,
+    "ordinary_request_compatibility": true,
+    "generation_bound": true,
+    "request_bound_safe_points": true,
+    "cleanup_on_session_close": true,
+    "selector_budget_us": 100,
+    "fail_closed": true
+  },
+  "dependencies": [
+    {
+      "mod_id": "org.vllm-hust.stateaxis-session-lifecycle",
+      "version_range": ">=0.2,<0.3",
+      "reason": "Program identity and cleanup require generation-safe session lifecycle authority."
+    }
+  ],
+  "host_contract": {
+    "provider": "stateaxis",
+    "api_range": ">=1,<2",
+    "implementation": "statecentric_engine:parse_program_aware_scheduling_additional_config",
+    "effect_counters": [
+      "program_authority_applied",
+      "program_authority_fallbacks"
+    ],
+    "lifecycle_state": [
+      "program_scheduling.active_programs",
+      "program_scheduling.active_threads",
+      "program_scheduling.finished_threads",
+      "program_scheduling.cancelled_threads"
+    ]
+  },
+  "qualification": {
+    "performance_qualified": false,
+    "evidence_label": "historical-matched-real-npu-negative",
+    "scope": "Qwen2.5-14B BF16 high-fan-out program workload with ordinary-request compatibility traffic",
+    "blockers": [
+      "the frozen 3+3 result predates the independent Manifest 0.3 activation",
+      "program throughput improved only 0.355%, below the 15% gate",
+      "ordinary-request TPOT P99 regressed 8.082%, failing the 5% guard",
+      "fresh matched ECPA real-online repetitions are required",
+      "no general scheduling, latency, throughput, fairness, or HBM claim is established"
+    ]
+  },
+  "source": {
+    "repository": "Qixin-Gaoke/stateaxis",
+    "commit": "7562b5fa6f42e2e045a877b53ac934739e2cf230",
+    "issues": [12]
+  }
+}

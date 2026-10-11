@@ -1,0 +1,64 @@
+{
+  "schema_version": "stateaxis-mod-on-off/v1",
+  "date_utc": "2026-10-11",
+  "mod_id": "org.vllm-hust.stateaxis-program-aware-scheduling",
+  "mod_version": "0.2.0",
+  "research_manifest_sha256": "4d57ded83290cedfb1370b26b9bc9d0fe5be0098bdc17a4d287f526c673a82de",
+  "evidence_label": "manager-contract-program-aware-scheduling-non-performance",
+  "performance_qualified": false,
+  "hardware_execution": false,
+  "manager": {
+    "dependency_check": "passed",
+    "session_lifecycle_check": "passed",
+    "program_scheduling_check": "passed",
+    "plan": "passed",
+    "multi_mod_dry_run": "passed",
+    "managed_assembly_check_process": "passed",
+    "off_assembly_identity_sha256": "69fd56fe5425f6d0f30d3036b1ac96de073a79a1b06abbd9741663687037e0f8",
+    "on_assembly_identity_sha256": "fe738a0877a7fa99b586bc5e6f1a4094194cf2c5acaa9d5ea802c5582a1e5df2",
+    "direct_environment_activation_rejected": true
+  },
+  "validation": {
+    "python_tests": "3 passed",
+    "manager_tests": "633 passed",
+    "rust_library_tests": "414 passed",
+    "cargo_check_lib_bins": "passed",
+    "native_state_engine_build": "passed"
+  },
+  "on_effects": {
+    "program_scheduling_mod_identity_present": true,
+    "session_lifecycle_mod_dependency_present": true,
+    "program_authority_applied_minimum_in_deterministic_test": 3,
+    "program_authority_fallbacks": 0,
+    "selection_changed": true,
+    "dependency_frontier_blocked_early_execution": true,
+    "active_programs_after_close": 0
+  },
+  "off_effects": {
+    "program_scheduling_mod_identity_present": false,
+    "program_tables_allocated": false,
+    "program_authority_applied": 0,
+    "program_authority_fallbacks": 0
+  },
+  "historical_real_npu_result": {
+    "model": "Qwen2.5-14B BF16",
+    "fresh_process_repetitions_per_arm": 3,
+    "program_completion_p50_delta_percent": -11.973,
+    "program_completion_p95_delta_percent": -0.378,
+    "program_throughput_delta_percent": 0.355,
+    "ordinary_request_tpot_p99_delta_percent": 8.082,
+    "jain_attained_service_fairness_delta_percent": 12.0,
+    "candidate_authority_applications_per_run": 129,
+    "candidate_selection_changes_per_run": 29,
+    "candidate_fallbacks": 0,
+    "exact_requests": "234/234",
+    "classification": "matched_negative",
+    "claim": "mechanism-effective but performance-negative in the frozen high-fan-out workload only"
+  },
+  "limitations": [
+    "current ECPA activation checks use deterministic CPU protocol workers and assembly-only launch",
+    "the historical real-NPU campaign predates Manifest 0.3 activation",
+    "fresh matched ECPA real-online repetitions are required",
+    "no general latency, throughput, fairness, HBM, or capacity claim is established"
+  ]
+}
