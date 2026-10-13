@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "format": "statecentric-issue12-program-performance-status-r9",
+  "source_npu_campaign": "r7",
+  "source_npu_campaign_completed": true,
+  "source_runner_exit_code": 1,
+  "source_runner_exit_reason": "superseded analyzer rejected zero SLO denominator",
+  "physical_npu": 5,
+  "gate_repetitions_per_arm": 1,
+  "formal_repetitions_per_arm": 3,
+  "formal_requests_exact": 234,
+  "formal_lifecycle_exact": true,
+  "analysis_completed": true,
+  "analysis_identity_sha256": "f47f5ff6dcb390b645bf6be70f80dca1576d9d282d0aa36ac406959015b3ef1a",
+  "classification": "matched_negative",
+  "cleanup_completed": true,
+  "performance_target_met": false,
+  "speedup_claim": false,
+  "vllm_comparison_claim": false
+}

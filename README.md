@@ -23,7 +23,10 @@ it is neither a general speedup nor evidence that other program shapes cannot
 benefit.
 
 Negative, failed, and inconclusive attempts are retained. The copied evidence
-and SHA-256 are recorded in `PROVENANCE.json`; see `EVIDENCE.md` for the index.
+and SHA-256 are recorded in `PROVENANCE.json`. A compact machine-readable R7/R9
+bundle, including all six run identities, is under
+`evidence/issue12-program-performance-20260815-r7/`; see `EVIDENCE.md` for the
+index.
 
 ## Activation contract
 

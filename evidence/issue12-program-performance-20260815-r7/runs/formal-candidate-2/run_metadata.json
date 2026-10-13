@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "evidence_label": "real-online",
+  "claim_status": "issue12-program-performance-candidate-real-online-gate",
+  "timestamp_recorded": "2026-08-15T05:53:25+08:00",
+  "parent": {
+    "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+    "branch": "codex/issue12-performance-closure-r2",
+    "dirty": false
+  },
+  "lifecycle_provenance": {
+    "parent_start": {
+      "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+      "tree": "ef6a5906dafefa14c207dc0cb55b0765ea67e90c",
+      "branch": "codex/issue12-performance-closure-r2",
+      "dirty": false,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "parent_end": {
+      "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+      "tree": "ef6a5906dafefa14c207dc0cb55b0765ea67e90c",
+      "branch": "codex/issue12-performance-closure-r2",
+      "dirty": false,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results_tree": {
+      "start_sha256": "",
+      "end_sha256": "",
+      "matched": true
+    },
+    "integrity": {
+      "launcher": {
+        "start_sha256": "5a47df4f38c5e9f98c2b80d9cfae9ecff4834248ddc182ddd8f40d2072aa539a",
+        "end_sha256": "5a47df4f38c5e9f98c2b80d9cfae9ecff4834248ddc182ddd8f40d2072aa539a",
+        "matched": true
+      },
+      "client": {
+        "start_sha256": "91ab51408f83f3c6d4a2a77b3e2b6842621dcc848c5a38b1e86e0499147c6a45",
+        "end_sha256": "91ab51408f83f3c6d4a2a77b3e2b6842621dcc848c5a38b1e86e0499147c6a45",
+        "matched": true
+      },
+      "auditor": null,
+      "end_matches_start": true
+    }
+  },
+  "submodules": {
+    "third_party/vllm-hust": {
+      "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+      "branch": "codex/issue12-performance-closure-r2",
+      "dirty": false,
+      "start": {
+        "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+        "tree": "ef6a5906dafefa14c207dc0cb55b0765ea67e90c",
+        "branch": "codex/issue12-performance-closure-r2",
+        "dirty": false,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "end": {
+        "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+        "tree": "ef6a5906dafefa14c207dc0cb55b0765ea67e90c",
+        "branch": "codex/issue12-performance-closure-r2",
+        "dirty": false,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "third_party/vllm-ascend-hust": {
+      "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+      "branch": "codex/issue12-performance-closure-r2",
+      "dirty": false,
+      "start": {
+        "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+        "tree": "ef6a5906dafefa14c207dc0cb55b0765ea67e90c",
+        "branch": "codex/issue12-performance-closure-r2",
+        "dirty": false,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "end": {
+        "commit": "1addcb2c6ed93b01fb2d2ddf991359a125a121b3",
+        "tree": "ef6a5906dafefa14c207dc0cb55b0765ea67e90c",
+        "branch": "codex/issue12-performance-closure-r2",
+        "dirty": false,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "hardware": {
+    "accelerator": "Ascend 910B2",
+    "physical_device": 5,
+    "visible_device": 0,
+    "device_count": 1
+  },
+  "model": {
+    "name": "Qwen2.5-14B-Instruct",
+    "revision": "qwen2.5-14b-bf16",
+    "dtype": "bfloat16",
+    "prompt_token_ids": [
+      1397,
+      64424,
+      44378,
+      5942
+    ],
+    "prompt_tokens": 4,
+    "prompt_sha256": null,
+    "prompt_token_ids_sha256": null
+  },
+  "runtime": {
+    "container": "statecentric-issue12-performance-r7-2914013",
+    "container_id": "fb60c40be107cf163930cf046908dbef8077073c5bc1e1db67fd3928850cf200",
+    "image": "quay.io/ascend/vllm-ascend:v0.23.0rc1-openeuler",
+    "container_hostname": "fb60c40be107",
+    "container_image_id": "sha256:f4c89c293e076453e9eef9edb5fb9669740dccbd3c48619a9f976d775fc29b81",
+    "cann": "9.0.0",
+    "listen": "127.0.0.1:18535",
+    "scheduler_policy": "full_state_aware",
+    "max_batch_size": 1,
+    "append_prefill_max_batch_size": 1,
+    "max_batch_compute_tokens": 36864,
+    "max_batch_new_kv_bytes": 4294967296,
+    "queue_capacity": 4096,
+    "starvation_ms": 250,
+    "deadline_guard_ms": 25,
+    "prefill_cohort_target_size": 0,
+    "prefill_cohort_max_wait_ms": 10,
+    "workflow_prefill_cohort_size": 0,
+    "workflow_decode_group_size": 0,
+    "max_consecutive_prefill_batches": 2,
+    "max_prefill_rows": 36864,
+    "max_decode_batch": 4,
+    "state_capacity": 68,
+    "physical_cache_blocks": 256,
+    "client_concurrency": 40,
+    "shared_source_states": 0,
+    "shared_source_tokens": 0,
+    "max_private_cache_blocks_per_branch": 2,
+    "executor_plan_revision": 10,
+    "execution_config_schema_version": 4,
+    "decode_sync_policy": "batch_end",
+    "prefix_extension_mode": "paged_append_prefill",
+    "decode_mlp_policy": "fused_gate_up_aclnn_swiglu",
+    "online_decode_execution": "eager_aclnn",
+    "component_prefill_fused_gate_up": true,
+    "component_prefill_fused_swiglu": true,
+    "execution_config_sha256": "408ad3b68c38df1cde4f335264c5554a89d476f3e9c179c71063ffd1ca0caea2",
+    "execution_artifact_identity_sha256": "eda976712755e07825549bd9c3346536878425c4235b422c60b27043ab45da51",
+    "batch_window_us": 25000,
+    "decode_quantum": 1,
+    "dynamic_batching": false,
+    "dual_microbatch": false,
+    "kv_bytes_per_token": 196608,
+    "workspace_bytes": 5905580032,
+    "capacity_timing_contract": "none",
+    "feedback_mode": "off",
+    "cache_capacity_stable_admission_stats": false,
+    "protocol_decode_timing": false,
+    "protocol_async_transfer_lane": false,
+    "state_binding": {
+      "compiled_plan_digest": "8690992604a630b0e643aaae6cb864d3b0984bf9f0518f17463e075647a6ef56",
+      "scheduler_plan_digest": "68ff8dfeae0c8470541ec262274547d2cd616bed8d6da7ad0e441d958259f1eb",
+      "scheduler_plan_identity_domain": "statecentric-native-scheduler-plan-v18",
+      "scheduler_capacity_policy": "worker-reported-immediate-transactional-descriptor-and-block-budget-v2",
+      "scheduler_physical_admission_policy": "phase-specific-immediate-kv-blocks-v1",
+      "scheduler_workflow_cohort_policy": "persistent-decode-cohort-v2",
+      "workflow_prefill_cohort_size": 0,
+      "workflow_decode_group_size": 0,
+      "cache_capacity_stable_admission_stats": false,
+      "scheduler_telemetry_policy": "native-capacity-wave-timing-v5",
+      "state_publication_policy": "state-id-indexed-atomic-framed-binary-prepared-v2",
+      "scheduler_implementation_digest": "9e6f69ab66a0a2425cf3ed57a15060e639c452a86f66caed862b011f0866e3fa",
+      "scheduler_runtime_dependencies_digest": "77f0485eb4bcf808f98e9eb47590464391e77e901c5c7ac19459c94b7545fb64",
+      "native_rust_bundle_identity": "97ae8b3defe080b36b1f1fe0461deff6f9c577365a37799e78d11ea79efe9495",
+      "native_rust_bundle_profile": "release",
+      "native_rust_bundle_build_contract_sha256": "c00d84822275924e1b90f66f42b0de272678d9f197361c7f44aa4f28d7a000ca",
+      "native_cpp_producer_closure_identity": "019e97fb71950c0ccdf3d86dfab4c1f683577be623958456c774992b3aa0bb2b",
+      "state_compatibility_digest": "2c5a93bc5c4e4cd23c9fc55a7f6388a974fbb7b2c6aa78c1963ca97f00e5bfff",
+      "weights_digest": "4ca9cbc269c4605424d3170d614f43854388b19bee70ade62c28ce054ee9033a",
+      "rope_semantics_digest": "727d6bdcbb2a888af175107dec84f02bc794319c4b14e320e25a0f6ac490b0e2",
+      "state_schema_digest": "a130e3e491d2751adbabd3b3013f5b7963d5cc550089f4496807a40296e34d94",
+      "cache_layout_digest": "0ceb9a7f363a757558fb20d2cf04ce2abd3325dde33d21cc9d9553bda63105dc",
+      "resident_plan_record_sha256": "c0811783b348fdeb2787d1ad5150837eb2d9c92e49213106b94a9e998b18cff4"
+    },
+    "server_binary_sha256": "9e6f69ab66a0a2425cf3ed57a15060e639c452a86f66caed862b011f0866e3fa",
+    "candidate_binary_sha256": "cdda03cf1491f4e7e18296f966b89232bae64abb78bbd578cc5bfffd08524744",
+    "client_sha256": "91ab51408f83f3c6d4a2a77b3e2b6842621dcc848c5a38b1e86e0499147c6a45",
+    "launcher_sha256": "5a47df4f38c5e9f98c2b80d9cfae9ecff4834248ddc182ddd8f40d2072aa539a",
+    "artifact_paths": {
+      "layers": "/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/worker_layers",
+      "global_pack": "/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r6/global_pack/global.weights.bin",
+      "execution_config": "/workspace/statecentric-ascend-engine/.benchmarks/issue12-program-performance-artifact-20260815-r6/execution_config.bin",
+      "execution_artifact_identity": "/workspace/statecentric-ascend-engine/.benchmarks/issue12-program-performance-artifact-20260815-r6/execution_artifact_identity.bin",
+      "native_rust_bundle": {
+        "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-rust-bundle-r6",
+        "manifest_sha256": "7ec47c6e7561f1982bfef3fc8cc8e56704f606ce73e1c7c24ade4b886bf7a7dc",
+        "identity_sha256": "97ae8b3defe080b36b1f1fe0461deff6f9c577365a37799e78d11ea79efe9495",
+        "profile": "release",
+        "build_contract_sha256": "c00d84822275924e1b90f66f42b0de272678d9f197361c7f44aa4f28d7a000ca"
+      },
+      "native_cpp_producer_closure": {
+        "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-artifact-20260815-r6/native_cpp_producer_closure.json",
+        "record_sha256": "e19fa1416dc262cb37df63ca5bd33663ec796db5f4f34a919b3554b3c9237e9a",
+        "identity_sha256": "019e97fb71950c0ccdf3d86dfab4c1f683577be623958456c774992b3aa0bb2b"
+      },
+      "pto_gate_up_library": null,
+      "pto_swiglu_library": null,
+      "pto_gate_up_swiglu_library": null,
+      "pto_gate_up_swiglu_descriptor": null,
+      "operator_fixture": "/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/operator_fixture",
+      "full_oracle": "/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/full_oracle_4",
+      "decode_oracle": "/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/decode_oracle"
+    },
+    "torch_execution": false,
+    "vllm_execution": false,
+    "graph_mode": false,
+    "custom_native_executor": true,
+    "conda_environment": null,
+    "worker_generation_oracle_sha256": "8ea7d5f88d57949b27b308eeeb3205890cfe7330e3ea1ac7c91a6d5dfa5b3a61"
+  },
+  "workload": {
+    "source": "repo-local native HTTP probe",
+    "probe_kind": "program-performance",
+    "prompt_kind": null,
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "requests": null
+  },
+  "oracle": {
+    "manifest_sha256": "f4758faf4061e63767ae8421fe24f5dd86a0bc920bf0c71d1606f06100bb675f",
+    "kind": "single-prompt-generation-oracle"
+  },
+  "artifacts": {
+    "result_sha256": "d14b9b9c5ac81e57ab1326e09f0ee2826531d168316433030996063394298567",
+    "raw_requests_sha256": "5e387b69da76e3eb6e98daaeadd07379ecfc65447a5e4a467bf08439ac4bbd20",
+    "warmup_rows_sha256": null,
+    "batch_plans_sha256": null,
+    "prompt_manifest_sha256": null,
+    "prompt_family_sha256": null,
+    "oracle_family_sha256": null,
+    "health_sha256": "c9d701de506747f6cd47003b0604be19bb9bbd6e3f61a47317549b285f35427c",
+    "server_log_sha256": "36e026a3f2194a21a3fbe1ea6d5cdd2074c3e2e37de85cfe1530bd79f5fcfbdf",
+    "client_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client_exit_code_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "launcher_exit_code_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "scoped_server_exit_status_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "native_server_ldd_sha256": "d50d260dc88307ea6e067ef3f64aeceb47151108327fedd138832ca505e5abb1",
+    "native_executor_ldd_sha256": "7157ae57126723596acdf119f3932b83e9085374e3489dc5c0f37747f240107e",
+    "candidate_process_manifest_sha256": "8256fb09551ea48aea7b1c278590c045c30bca3f42022db9e822647205dbcb8d",
+    "sanitized_environment_sha256": "79c26a9123d2f2f885883976c3c1e50ec64ac78e458e8e37d08bb5d55859e5fc",
+    "runtime_dependencies_sha256": "2fb5a0e30114183d9b63d4840475c7b729f9bed6019f6f740041e78c524482c2",
+    "npu_before_sha256": "9a67cb038e17bde8049ae071ec0337f5c53c0509d5de26aff8ddf7c930c109c9",
+    "npu_after_sha256": "1d375b40882ef9b24e3948811f90afcebe0ac9afdd796483be6119402beb7b93",
+    "scoped_server_identity_sha256": "de6c1860cb78b5b027bde45d5e515b17d9e5fa8d2cbdae6f9c89b1d2c74f0069",
+    "scoped_port_before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "host_process_before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "container_process_before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scoped_port_after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "host_process_after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "container_process_after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "container_process_table_after_sha256": "2a5bdf69deb4dc47f90fd190d3a8a2c96962fda0757ad8cb562dd1a6b2cad184",
+    "parent_status_start_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "parent_status_end_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vllm_hust_status_start_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vllm_hust_status_end_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vllm_ascend_hust_status_start_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vllm_ascend_hust_status_end_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results_tree_start_sha256": "",
+    "results_tree_end_sha256": "",
+    "decode_timing_sha256": null
+  },
+  "command": "STATE_ENGINE_PROTOCOL_DECODE_TIMING=0 STATE_ENGINE_PHYSICAL_CACHE_BLOCKS=256 STATE_ENGINE_CLIENT_CONCURRENCY=40 STATE_ENGINE_SHARED_SOURCE_STATES=0 STATE_ENGINE_SHARED_SOURCE_TOKENS=0 STATE_ENGINE_MAX_PRIVATE_CACHE_BLOCKS_PER_BRANCH=2 STATE_ENGINE_CAPACITY_TIMING_CONTRACT=none STATE_ENGINE_MAX_BATCH_COMPUTE_TOKENS=36864 STATE_ENGINE_MAX_BATCH_NEW_KV_BYTES=4294967296 STATE_ENGINE_QUEUE_CAPACITY=4096 STATE_ENGINE_CACHE_CAPACITY_STABLE_ADMISSION_STATS=0 STATE_ENGINE_AUTOMATIC_PREFIX_CACHE=0 STATE_ENGINE_DYNAMIC_BATCHING=0 STATE_ENGINE_DUAL_MICROBATCH=0 STATE_ENGINE_STARVATION_MS=250 STATE_ENGINE_DEADLINE_GUARD_MS=25 STATE_ENGINE_DECODE_QUANTUM=1 STATE_ENGINE_PREFILL_COHORT_TARGET_SIZE=0 STATE_ENGINE_PREFILL_COHORT_MAX_WAIT_MS=10 STATE_ENGINE_WORKFLOW_PREFILL_COHORT_SIZE=0 STATE_ENGINE_WORKFLOW_DECODE_GROUP_SIZE=0 STATE_ENGINE_MAX_CONSECUTIVE_PREFILL_BATCHES=2 STATE_ENGINE_ISSUE12_ARM=candidate STATE_ENGINE_ISSUE12_TELEMETRY=1 STATE_ENGINE_ISSUE12_AUTHORITY=1 STATE_ENGINE_PROGRAM_WORKLOAD_ARTIFACT=/tmp/statecentric-issue12-r2/benchmarks/issue12_program_performance_20260815_r5_workload.json STATE_ENGINE_NPU=5 STATE_ENGINE_MODEL_NAME=Qwen2.5-14B-Instruct STATE_ENGINE_MODEL_REVISION=qwen2.5-14b-bf16 STATE_ENGINE_MODEL_DTYPE=bfloat16 STATE_ENGINE_KV_BYTES_PER_TOKEN=196608 STATE_ENGINE_APPEND_PREFILL_MAX_BATCH_SIZE=1 STATE_ENGINE_NATIVE_LAYERS=/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/worker_layers STATE_ENGINE_NATIVE_GLOBAL_PACK=/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r6/global_pack/global.weights.bin STATE_ENGINE_EXECUTION_CONFIG=/workspace/statecentric-ascend-engine/.benchmarks/issue12-program-performance-artifact-20260815-r6/execution_config.bin STATE_ENGINE_EXECUTION_ARTIFACT_IDENTITY=/workspace/statecentric-ascend-engine/.benchmarks/issue12-program-performance-artifact-20260815-r6/execution_artifact_identity.bin STATE_ENGINE_OPERATOR_FIXTURE=/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/operator_fixture STATE_ENGINE_FULL_ORACLE=/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/full_oracle_4 STATE_ENGINE_DECODE_ORACLE=/workspace/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/decode_oracle STATE_ENGINE_WORKSPACE_BYTES=5905580032 STATE_ENGINE_MAX_BATCH_SIZE=1 STATE_ENGINE_MAX_PREFILL_ROWS=36864 STATE_ENGINE_MAX_DECODE_BATCH=4 STATE_ENGINE_STATE_CAPACITY=68 STATE_ENGINE_WORKER_GENERATION_ORACLE=/workspace/statecentric-ascend-engine/results/20260717-qwen14b-generation-oracle-2-v1/oracle_manifest.json STATE_ENGINE_NATIVE_HTTP_PROBE_KIND=program-performance STATE_ENGINE_BATCH_WINDOW_US=25000 STATE_ENGINE_NATIVE_HTTP_OUTPUT_ROOT=/tmp/statecentric-issue12-r2/.benchmarks STATE_ENGINE_NATIVE_HTTP_OUTPUT=issue12-performance-r7-formal-candidate-2-2914013 scripts/run_native_http_npu_probe.sh",
+  "formal_use": "matched real-NPU high-fanout and public ToolBench topology program completion, fairness, selector, request latency, HBM and lifecycle evidence"
+}

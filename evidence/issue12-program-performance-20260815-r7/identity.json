@@ -1,0 +1,171 @@
+{
+  "format": "statecentric-issue12-program-performance-identity-r7",
+  "identity_sha256": "6e7a87409308aaa9715d7513ffd706e75189b4a027fbc74f4fb700eb3dd0c1a2",
+  "image": {
+    "digest": "sha256:f4c89c293e076453e9eef9edb5fb9669740dccbd3c48619a9f976d775fc29b81",
+    "reference": "quay.io/ascend/vllm-ascend:v0.23.0rc1-openeuler"
+  },
+  "public_trace_provenance": {
+    "license": "Apache-2.0",
+    "max_length": 7,
+    "normalized_steps": [
+      "tool-list",
+      "tool-detail",
+      "finish"
+    ],
+    "privacy": "topology and identity only; source observations and contact data are not copied",
+    "query_count": 3,
+    "source_bytes": 22570,
+    "source_commit": "d56fdd89faf8c91fa135090b212bb9057ee5cfc2",
+    "source_git_blob": "79d39226f85e96d937ba8ea8e693862793c36e42",
+    "source_path": "data_example/answer/G1_answer/10_ChatGPT_DFS_woFilter_w2.json",
+    "source_repository": "https://github.com/OpenBMB/ToolBench",
+    "source_sha256": "76a77721640045e07142c669008611e6b82b25007c73427aec771adbf9dd9841",
+    "tool_wait_ms": [
+      0,
+      10,
+      10
+    ],
+    "tree_size": 7,
+    "win": true
+  },
+  "records": {
+    "agent_oracle_reference_1": {
+      "bytes": 1623,
+      "path": "/tmp/statecentric-issue12-r2/results/issue3-agent-oracle-20260814-r3/reference-1.json",
+      "sha256": "d5fe5f5021d603a0be1b6a347cdc42193ca0fad19cda090901511a3f780f6dd0"
+    },
+    "agent_oracle_reference_2": {
+      "bytes": 1623,
+      "path": "/tmp/statecentric-issue12-r2/results/issue3-agent-oracle-20260814-r3/reference-2.json",
+      "sha256": "d5fe5f5021d603a0be1b6a347cdc42193ca0fad19cda090901511a3f780f6dd0"
+    },
+    "agent_oracle_result": {
+      "bytes": 572,
+      "path": "/tmp/statecentric-issue12-r2/results/issue3-agent-oracle-20260814-r3/result.json",
+      "sha256": "b0ec7d15b50b4faa295a4be065184a799f19757df1fadf77ad5c78aad10109dc"
+    },
+    "client": {
+      "bytes": 13016,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/issue12_program_performance_probe.py",
+      "sha256": "91ab51408f83f3c6d4a2a77b3e2b6842621dcc848c5a38b1e86e0499147c6a45"
+    },
+    "client_helpers": {
+      "bytes": 13493,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/issue3_agent_feedback_probe.py",
+      "sha256": "50a1253860cabcf5cc001275b1e5e53405e3a00be053edf2dab674d4a2bca0a6"
+    },
+    "cpp_closure": {
+      "bytes": 30503,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-artifact-20260815-r6/native_cpp_producer_closure.json",
+      "sha256": "e19fa1416dc262cb37df63ca5bd33663ec796db5f4f34a919b3554b3c9237e9a"
+    },
+    "decode_oracle_manifest": {
+      "bytes": 13869,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/decode_oracle/manifest.json",
+      "sha256": "a1d1999c7c07ced46293b682c4bb0848869199f519bc71c13e5fc97e87b6ebc0"
+    },
+    "execution_artifact": {
+      "bytes": 360,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-artifact-20260815-r6/execution_artifact_identity.bin",
+      "sha256": "eda976712755e07825549bd9c3346536878425c4235b422c60b27043ab45da51"
+    },
+    "execution_config": {
+      "bytes": 256,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-artifact-20260815-r6/execution_config.bin",
+      "sha256": "408ad3b68c38df1cde4f335264c5554a89d476f3e9c179c71063ffd1ca0caea2"
+    },
+    "full_oracle_manifest": {
+      "bytes": 13855,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/full_oracle_4/manifest.json",
+      "sha256": "38aae938012da96bab02e0e73787bab06ee1c166c8813364f43d0a80b6b0a1ca"
+    },
+    "global_manifest": {
+      "bytes": 1632,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r6/global_pack/global_manifest.json",
+      "sha256": "5922b55ba03d371388d7fc68b4a4e55a152c1ce33917d057f534a83beaee1a4f"
+    },
+    "identity_freezer": {
+      "bytes": 4304,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/freeze_issue12_program_performance_identity_r7.py",
+      "sha256": "b0fb04c936ce1bd7115a4d0cb8e8e6c9b57336bfac16a952b5474ddc57725bf5"
+    },
+    "inspector": {
+      "bytes": 154352,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-cpp-build-r6/statecentric_qwen2_resident_plan_inspect",
+      "sha256": "35e10978a496ef52c8b3858fc7bd621fa71f1a27bea776e115812a40e9057ed0"
+    },
+    "launcher": {
+      "bytes": 199001,
+      "path": "/tmp/statecentric-issue12-r2/scripts/run_native_http_npu_probe.sh",
+      "sha256": "5a47df4f38c5e9f98c2b80d9cfae9ecff4834248ddc182ddd8f40d2072aa539a"
+    },
+    "layers_manifest": {
+      "bytes": 233565,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/worker_layers/all_layers_manifest.json",
+      "sha256": "a1c0e8156dd20fa06fb97b45a3c19a37c330b06d33cdcd9f37277d8f272e0530"
+    },
+    "model_manifest": {
+      "bytes": 168249,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/model_manifest.json",
+      "sha256": "a361693076e1f8e073711796b40269973396ad4b7ed4373a57bf9b6eafdc1912"
+    },
+    "native_state_identity": {
+      "bytes": 3002,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-artifact-20260815-r6/native_state_identity.json",
+      "sha256": "5eba7d9017520d2f0eb3ab4b6c90c6f709d51cf474e06224b36c41ee5f8391a5"
+    },
+    "npu_runner": {
+      "bytes": 12254,
+      "path": "/tmp/statecentric-issue12-r2/scripts/run_issue12_program_performance_20260815_r7_gate.sh",
+      "sha256": "022a3898f7b429e72ed6f18475db3d59a0d3eec34602096ba8686e729f582894"
+    },
+    "operator_fixture_manifest": {
+      "bytes": 1185,
+      "path": "/home/shuhao/statecentric-ascend-engine/.benchmarks/issue8-capacity17-20260812-r8/operator_fixture/manifest.json",
+      "sha256": "7a0e025936e73d2b394ec2c3ab49390f2182593662cca76dd6f0b8979e1dbfb3"
+    },
+    "prepare_runner": {
+      "bytes": 5601,
+      "path": "/tmp/statecentric-issue12-r2/scripts/prepare_issue12_program_performance_20260815_r6.sh",
+      "sha256": "6327b8274bfb31c543058e2ecd109e900012f741b7a9249e36ff0e61c0ff0b18"
+    },
+    "preregistration": {
+      "bytes": 4202,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/issue12_program_performance_20260815_r7_preregistration.json",
+      "sha256": "b6605f879cba6c4a32ef0aa2fd97d19191f2fb15da10f02c52bc48a099098325"
+    },
+    "readiness": {
+      "bytes": 4288,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-artifact-20260815-r6/readiness.json",
+      "sha256": "a6c56527bb658494695bc61c8af33b6f638de45776f5b5bdf28ff818ced0f731"
+    },
+    "rust_bundle_manifest": {
+      "bytes": 19483,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-rust-bundle-r6/manifest.json",
+      "sha256": "7ec47c6e7561f1982bfef3fc8cc8e56704f606ce73e1c7c24ade4b886bf7a7dc"
+    },
+    "rust_server": {
+      "bytes": 2833808,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-rust-bundle-r6/native_state_engine",
+      "sha256": "9e6f69ab66a0a2425cf3ed57a15060e639c452a86f66caed862b011f0866e3fa"
+    },
+    "summarizer": {
+      "bytes": 5740,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/summarize_issue12_program_performance_r5.py",
+      "sha256": "e4ec7f09bda7120fa1ad21d69a56b6ece73ac8a27b41af5043996e7aaebf8539"
+    },
+    "worker": {
+      "bytes": 815512,
+      "path": "/tmp/statecentric-issue12-r2/.benchmarks/issue12-program-performance-cpp-build-r6/statecentric_resident_full_model_probe",
+      "sha256": "cdda03cf1491f4e7e18296f966b89232bae64abb78bbd578cc5bfffd08524744"
+    },
+    "workload": {
+      "bytes": 1358,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/issue12_program_performance_20260815_r5_workload.json",
+      "sha256": "f4758faf4061e63767ae8421fe24f5dd86a0bc920bf0c71d1606f06100bb675f"
+    }
+  },
+  "schema_version": 1,
+  "source_commit": "7b648e7a83f4c5be44c55a156d1e4f3348a0474b"
+}
