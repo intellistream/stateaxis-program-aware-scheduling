@@ -1,0 +1,88 @@
+{
+  "format": "statecentric-issue12-program-performance-analysis-identity-r9",
+  "identity_sha256": "f47f5ff6dcb390b645bf6be70f80dca1576d9d282d0aa36ac406959015b3ef1a",
+  "records": {
+    "analysis_preregistration": {
+      "bytes": 953,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/issue12_program_performance_20260815_r9_analysis_preregistration.json",
+      "sha256": "9ae81846c4f05d69402d2f97cf78ab245efe1c6784b1e276fbed7bd2279f1ef1"
+    },
+    "analyzer": {
+      "bytes": 7935,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/summarize_issue12_program_performance_r9.py",
+      "sha256": "78e39a7b5bb43a83c81e1a40a82be8b0168d9a54fe33bf7dc85e80b1be657baf"
+    },
+    "candidate_1_raw": {
+      "bytes": 49628,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-candidate-1/raw_requests.jsonl",
+      "sha256": "440e989736294d8a3d55f7f147cb4fa011bef422a01c681fa131f8de045caf6a"
+    },
+    "candidate_1_result": {
+      "bytes": 519530,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-candidate-1/result.json",
+      "sha256": "23358e19bcbd08df4e9a567a6e8cecdb279f2417a17512727b6bd85c6ad8e4c2"
+    },
+    "candidate_2_raw": {
+      "bytes": 49630,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-candidate-2/raw_requests.jsonl",
+      "sha256": "5e387b69da76e3eb6e98daaeadd07379ecfc65447a5e4a467bf08439ac4bbd20"
+    },
+    "candidate_2_result": {
+      "bytes": 519495,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-candidate-2/result.json",
+      "sha256": "d14b9b9c5ac81e57ab1326e09f0ee2826531d168316433030996063394298567"
+    },
+    "candidate_3_raw": {
+      "bytes": 49633,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-candidate-3/raw_requests.jsonl",
+      "sha256": "d48de8dcd4b2ff295eda4674c71295d3a5dd2717624ba1b74b8bba10c712aa46"
+    },
+    "candidate_3_result": {
+      "bytes": 519594,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-candidate-3/result.json",
+      "sha256": "a2e92bbaaa1833fddd7fc6c4e6664412984d624c5f10b1535355d3b735ba6471"
+    },
+    "control_1_raw": {
+      "bytes": 49632,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-control-1/raw_requests.jsonl",
+      "sha256": "873640f586b3ec14a0101cbdcfda6cc92f8244d2ca22b8965d94604676dd51a9"
+    },
+    "control_1_result": {
+      "bytes": 519702,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-control-1/result.json",
+      "sha256": "b817346a30da3455d313881497f052f318c80580d4b2f4aae43f7b1264962b5a"
+    },
+    "control_2_raw": {
+      "bytes": 49629,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-control-2/raw_requests.jsonl",
+      "sha256": "d71fa81a22dcc6737e239919217f4223ce4c3ee7890c7672b8b32ea07b9d915b"
+    },
+    "control_2_result": {
+      "bytes": 519043,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-control-2/result.json",
+      "sha256": "1bd3b80e5670815527feb184e81a6c6d4b055bcbe6bf27df054c3ef0c547903f"
+    },
+    "control_3_raw": {
+      "bytes": 49638,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-control-3/raw_requests.jsonl",
+      "sha256": "782e99eb1802e27f0ff4742e7004f3f7e522f4c869e8263e371d2816453c28af"
+    },
+    "control_3_result": {
+      "bytes": 519438,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/runs/formal-control-3/result.json",
+      "sha256": "3b275551222f6ba70fc6ec62b29208f474329e3c507babb4870efb032e5fdc9d"
+    },
+    "r7_identity": {
+      "bytes": 8074,
+      "path": "/tmp/statecentric-issue12-r2/benchmarks/issue12_program_performance_20260815_r7_identity.json",
+      "sha256": "1a8024a5a0ddd08af25d4dac1765436d6061405ce0b2db04fcbc7177109b71e6"
+    },
+    "r9_result": {
+      "bytes": 8430,
+      "path": "/tmp/statecentric-issue12-r2/results/issue12-program-performance-20260815-r7/result-r9.json",
+      "sha256": "4d7e4b44d93995ef530eec01fd8e7d4d4de8b0b77818697f06b88d9709b3930a"
+    }
+  },
+  "schema_version": 1,
+  "source_commit": "0f4987e7ec6348c6233241d3979e22e34d3a9348"
+}

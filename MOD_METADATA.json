@@ -32,14 +32,14 @@
     ]
   },
   "evidence": {
-    "qualification": "historical-negative-active-experimental",
-    "latest_result": "evidence/ISSUE12_PROGRAM_PERFORMANCE_CLOSURE_20260815.md",
+    "qualification": "historical_matched_real_npu_3plus3_negative_active_revision_performance_unqualified",
+    "latest_result": "evidence/issue12-program-performance-20260815-r7/result-r9.json",
     "index": "EVIDENCE.md",
     "performance_claims": [
       {
-        "label": "not-beneficial-in-tested-cell",
-        "scope": "Qwen2.5-14B BF16 frozen high-fan-out StateAxis source evidence only",
-        "result": "Program throughput improved 0.355% but ordinary-request TPOT P99 regressed 8.082%; the preregistered cell was negative."
+        "label": "historical-matched-real-npu-3plus3-negative",
+        "scope": "frozen StateAxis issue #12 R7/R9; Qwen2.5-14B BF16; Ascend 910B2; high-fan-out plus ordinary compatibility traffic; three fresh processes per arm",
+        "result": "All 234 requests were exact and lifecycle-clean. Program throughput improved 0.355%, completion P50 improved 11.973%, and fairness improved 12.0%, but completion P95 improved only 0.378% and ordinary-request TPOT P99 regressed 8.082%, failing the preregistered 15% benefit and 5% guard gates. Active version 0.2.0 remains performance-unqualified."
       }
     ]
   }

@@ -1,0 +1,306 @@
+{
+  "arms": {
+    "candidate": {
+      "aicore_utilization_p95_percent": {
+        "max": 85.0,
+        "p50": 84.7,
+        "p95": 84.97,
+        "p99": 84.994
+      },
+      "authority_applied": 387,
+      "hbm_peak_used_mib": {
+        "max": 53534.0,
+        "p50": 53534.0,
+        "p95": 53534.0,
+        "p99": 53534.0
+      },
+      "jain_service_fairness_at_slo": {
+        "max": 0.25,
+        "p50": 0.25,
+        "p95": 0.25,
+        "p99": 0.25
+      },
+      "no_program_starvation": true,
+      "npu_utilization_p95_percent": {
+        "max": 100.0,
+        "p50": 100.0,
+        "p95": 100.0,
+        "p99": 100.0
+      },
+      "ordinary_requests_completed": 12,
+      "ordinary_scheduler_wait_p99_ns": {
+        "max": 976373458.37,
+        "p50": 972346098.04,
+        "p95": 975970722.3369999,
+        "p99": 976292911.1634
+      },
+      "ordinary_tpot_p99_ns": {
+        "max": 880228998.81,
+        "p50": 878029605.11,
+        "p95": 880009059.4399999,
+        "p99": 880185010.936
+      },
+      "ordinary_ttft_p99_ns": {
+        "max": 1006773709.23,
+        "p50": 1003151188.55,
+        "p95": 1006411457.162,
+        "p99": 1006701258.8164
+      },
+      "preemption_count": 0,
+      "preemption_overhead_ns": 0,
+      "program_completion_p50_ms": {
+        "max": 2193.0131485,
+        "p50": 2172.3634460000003,
+        "p95": 2190.94817825,
+        "p99": 2192.6001544500004
+      },
+      "program_completion_p95_ms": {
+        "max": 2649.6811495,
+        "p50": 2642.3474005,
+        "p95": 2648.9477746000002,
+        "p99": 2649.5344745200005
+      },
+      "program_completion_p99_ms": {
+        "max": 2665.9537867,
+        "p50": 2658.6493585,
+        "p95": 2665.22334388,
+        "p99": 2665.807698136
+      },
+      "program_per_s": {
+        "max": 5.799683466253204,
+        "p50": 5.768048449634304,
+        "p95": 5.796519964591314,
+        "p99": 5.799050765920826
+      },
+      "program_slo_goodput_per_s": {
+        "max": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0
+      },
+      "public_trace_exact": true,
+      "recomputed_tokens": 0,
+      "repetitions": 3,
+      "request_per_s": {
+        "max": 11.599366932506408,
+        "p50": 11.536096899268609,
+        "p95": 11.593039929182629,
+        "p99": 11.598101531841651
+      },
+      "request_tpot_p50_ns": {
+        "max": 897902953.0,
+        "p50": 893879591.0,
+        "p95": 897500616.8,
+        "p99": 897822485.76
+      },
+      "request_tpot_p95_ns": {
+        "max": 931705218.1,
+        "p50": 926022262.3000001,
+        "p95": 931136922.5200001,
+        "p99": 931591558.9840001
+      },
+      "request_tpot_p99_ns": {
+        "max": 934373187.84,
+        "p50": 932205820.66,
+        "p95": 934156451.1220001,
+        "p99": 934329840.4964
+      },
+      "request_ttft_p50_ns": {
+        "max": 430843451.0,
+        "p50": 428208130.0,
+        "p95": 430579918.90000004,
+        "p99": 430790744.58000004
+      },
+      "request_ttft_p95_ns": {
+        "max": 949515708.5,
+        "p50": 945440674.0000001,
+        "p95": 949108205.05,
+        "p99": 949434207.81
+      },
+      "request_ttft_p99_ns": {
+        "max": 996098688.5799999,
+        "p50": 992299083.3,
+        "p95": 995718728.0519999,
+        "p99": 996022696.4743999
+      },
+      "selection_changes": 29,
+      "selector_candidate_p99_ns": {
+        "max": 43729.799999999996,
+        "p50": 43630.6,
+        "p95": 43719.88,
+        "p99": 43727.816
+      },
+      "selector_control_p99_ns": {
+        "max": 34958.99999999999,
+        "p50": 28122.4,
+        "p95": 34275.34,
+        "p99": 34822.268
+      },
+      "state_hits": 0,
+      "throughput_cv": 0.003423991678090548
+    },
+    "control": {
+      "aicore_utilization_p95_percent": {
+        "max": 83.4,
+        "p50": 83.4,
+        "p95": 83.4,
+        "p99": 83.4
+      },
+      "authority_applied": 0,
+      "hbm_peak_used_mib": {
+        "max": 53534.0,
+        "p50": 53534.0,
+        "p95": 53534.0,
+        "p99": 53534.0
+      },
+      "jain_service_fairness_at_slo": {
+        "max": 0.22321428571428573,
+        "p50": 0.22321428571428573,
+        "p95": 0.22321428571428573,
+        "p99": 0.22321428571428573
+      },
+      "no_program_starvation": true,
+      "npu_utilization_p95_percent": {
+        "max": 100.0,
+        "p50": 95.1,
+        "p95": 99.50999999999999,
+        "p99": 99.902
+      },
+      "ordinary_requests_completed": 12,
+      "ordinary_scheduler_wait_p99_ns": {
+        "max": 1114865821.65,
+        "p50": 1114378950.7099998,
+        "p95": 1114817134.556,
+        "p99": 1114856084.2312
+      },
+      "ordinary_tpot_p99_ns": {
+        "max": 815103945.86,
+        "p50": 812370612.59,
+        "p95": 814830612.533,
+        "p99": 815049279.1946001
+      },
+      "ordinary_ttft_p99_ns": {
+        "max": 1145363103.29,
+        "p50": 1144856078.28,
+        "p95": 1145312400.789,
+        "p99": 1145352962.7898
+      },
+      "preemption_count": 0,
+      "preemption_overhead_ns": 0,
+      "program_completion_p50_ms": {
+        "max": 2468.4612625,
+        "p50": 2467.8385184999997,
+        "p95": 2468.3989881,
+        "p99": 2468.44880762
+      },
+      "program_completion_p95_ms": {
+        "max": 2654.19280525,
+        "p50": 2652.37111125,
+        "p95": 2654.01063585,
+        "p99": 2654.15637137
+      },
+      "program_completion_p99_ms": {
+        "max": 2670.5890202500004,
+        "p50": 2668.7411086499997,
+        "p95": 2670.40422909,
+        "p99": 2670.5520620180005
+      },
+      "program_per_s": {
+        "max": 5.747877647640077,
+        "p50": 5.747651147369742,
+        "p95": 5.747854997613043,
+        "p99": 5.74787311763467
+      },
+      "program_slo_goodput_per_s": {
+        "max": 0.0,
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0
+      },
+      "public_trace_exact": true,
+      "recomputed_tokens": 0,
+      "repetitions": 3,
+      "request_per_s": {
+        "max": 11.495755295280153,
+        "p50": 11.495302294739483,
+        "p95": 11.495709995226086,
+        "p99": 11.49574623526934
+      },
+      "request_tpot_p50_ns": {
+        "max": 825389739.0,
+        "p50": 822726760.0,
+        "p95": 825123441.1,
+        "p99": 825336479.4200001
+      },
+      "request_tpot_p95_ns": {
+        "max": 857865131.7,
+        "p50": 855798490.9,
+        "p95": 857658467.62,
+        "p99": 857823798.884
+      },
+      "request_tpot_p99_ns": {
+        "max": 860501739.54,
+        "p50": 858473485.04,
+        "p95": 860298914.0899999,
+        "p99": 860461174.45
+      },
+      "request_ttft_p50_ns": {
+        "max": 567547465.0,
+        "p50": 564864864.0,
+        "p95": 567279204.9,
+        "p99": 567493812.98
+      },
+      "request_ttft_p95_ns": {
+        "max": 1088056634.2,
+        "p50": 1087615629.1000001,
+        "p95": 1088012533.69,
+        "p99": 1088047814.098
+      },
+      "request_ttft_p99_ns": {
+        "max": 1134614828.34,
+        "p50": 1134133819.8799999,
+        "p95": 1134566727.494,
+        "p99": 1134605208.1707997
+      },
+      "selection_changes": 28,
+      "selector_candidate_p99_ns": {
+        "max": 49140.6,
+        "p50": 48032.600000000006,
+        "p95": 49029.799999999996,
+        "p99": 49118.44
+      },
+      "selector_control_p99_ns": {
+        "max": 33846.0,
+        "p50": 24585.119999999995,
+        "p95": 32919.912,
+        "p99": 33660.782400000004
+      },
+      "state_hits": 0,
+      "throughput_cv": 0.0004594360871884579
+    }
+  },
+  "classification": "matched_negative",
+  "format": "statecentric-issue12-program-performance-summary-r9",
+  "metric_completeness": {
+    "jain_fairness": true,
+    "npu_utilization": true,
+    "ordinary_no_starvation": true,
+    "preemption": true,
+    "program_completion_p50_p95_p99": true,
+    "program_throughput": true,
+    "request_ttft_tpot_p50_p95_p99": true,
+    "state_hit_recompute": true
+  },
+  "ordinary_tpot_p99_delta_fraction": 0.08082393860933257,
+  "performance_target_met": false,
+  "program_completion_p95_delta_fraction": -0.003779150929326902,
+  "program_slo_goodput_delta_fraction": null,
+  "program_slo_goodput_disposition": "rejected_zero_control_denominator",
+  "program_slo_goodput_measurable": false,
+  "schema_version": 1,
+  "selector_budget_passed": true,
+  "selector_cpu_p99_budget_ns": 100000,
+  "speedup_claim": false,
+  "vllm_comparison_claim": false,
+  "workload_sha256": "f4758faf4061e63767ae8421fe24f5dd86a0bc920bf0c71d1606f06100bb675f"
+}
